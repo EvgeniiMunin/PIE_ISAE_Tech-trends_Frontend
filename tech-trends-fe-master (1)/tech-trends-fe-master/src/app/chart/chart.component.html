@@ -1,0 +1,12 @@
+<div *ngIf="!loaded">
+    <br><br>
+<!--    <img src="/tech-trends-fe/assets/ajax-loader.gif"> -->
+    <img src="./ajax-loader.gif">
+    <br><br>
+    Loading...
+    <br><br><br>
+</div>
+<div [hidden]="!loaded" style="text-align:center">
+    <canvas baseChart id="myChart" width="1400" height="400"></canvas>
+</div>
+
